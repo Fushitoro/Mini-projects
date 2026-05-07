@@ -1,0 +1,70 @@
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville 
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: black;
+    }
+
+    .meme {
+      height: 500px;
+      width: 500px;
+      margin: 3% 35%;
+      font-family: "Libre Baskerville", serif;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .meme-img {
+      width: 100%;
+      border: 2px solid white;
+      padding: 10px;
+    }
+
+    .meme-1 {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="meme">
+    <div class="meme-1">
+      <img src="assets/images/CSK.jpeg" alt="" class="meme-img">
+      <h1>Comeback Super Kings</h1>
+      <p>No one Belive it but they Did it!</p>
+    </div>
+    <div class="meme-2">
+      <img src="assets/images/Sanju Baba.jpeg" alt="" class="meme-img">
+      <h1>Sanju Baba CHETHHA!</h1>
+      <p>Sanju Baba Thinking next Match i will show Rishab Pant how to score for team and WK</p>
+    </div>
+  </div>
+</body>
+
+</html>

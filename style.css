@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0d0d0d;
+    color: white;
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.navbar {
+    padding: 20px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.hero-left h2 {
+    font-size: 48px;
+}
+
+.hero-left p {
+    margin: 15px 0;
+}
+
+.btn {
+    background: orange;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+
+.hero-right img {
+    width: 400px;
+    max-width: 100%;
+}
+
+
+.section-title {
+    text-align: center;
+    margin: 80px 0 40px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 150px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.add-btn {
+    background: orange;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+.cta-section {
+    text-align: center;
+    margin: 80px 0;
+}
+
+
+.footer {
+    background: #111;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: white;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 165, 0, 0.2);
+}
+
+
+.btn {
+  background: linear-gradient(135deg, orange, #ff4500);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.4);
+}
+
+
+.add-btn {
+  background: linear-gradient(135deg, orange, red);
+  border-radius: 50%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  transform: scale(1.2);
+}
+
+.navbar {
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid gray;
+  border-top: 5px solid orange;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100%;
+  background: #111;
+  transition: 0.4s;
+  padding: 20px;
+  z-index: 200;
+}
+
+.cart-modal.active {
+  right: 0;
+}
+
+.close-cart {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #111;
+    width: 200px;
+    padding: 20px;
+    transition: 0.3s;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.light-mode {
+  background: #f5f5f5;
+  color: black;
+}
+
+/* Light mode */
+body.light {
+  background: #ffffff;
+  color: #111;
+}
+
+/* Optional: fix cards/navbar in light */
+body.light .card {
+  background: rgba(0,0,0,0.05);
+  color: #111;
+}
+
+body.light .navbar {
+  background: rgba(255,255,255,0.6);
+}
+
+/* Toggle button style */
+#theme-toggle {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 20px;
+  color: inherit;
+}

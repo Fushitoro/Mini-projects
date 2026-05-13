@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akatsuki Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="navbar">
+            <div class="logo"><img src="./images/akatsuki symbol.png" alt="">
+                <h1>Akatsuki Cafe</h1>
+            </div>
+            <ul>
+                <li class="active">Home</li>
+                <li>About us</li>
+                <li>Service</li>
+                <li>Contact us</li>
+                <li>Cart (<span id="cart-count">0</span>)</li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="left">
+                <h1>Delicious <span>Burger</span></h1>
+                <h1>Delivered Fast</h1>
+                <p>Experience the freshly fried, baked burger
+                    filled with rich ingredients that boost your energy</p>
+                <br>
+                <button class="cta">Order Now</button>
+            </div>
+            <div class="right">
+                <img src="./images/Burger.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="menu">
+        <h2>Our Menu</h2>
+
+        <div class="tabs">
+            <span class="active" data-filter="all">All</span>
+            <span data-filter="burger">Burger</span>
+            <span data-filter="pizza">Pizza</span>
+            <span data-filter="drinks">Drinks</span>
+        </div>
+        <div class="cards-content">
+            <div class="card" data-category="burger">
+                <img src="./images/Classic Burger.png" alt="">
+                <h2>Classic Burger</h2>
+                <p>Juicy Beef Party with fresh veggies
+                    and a special spicy sauce </p>
+                <span class="price">₹149</span>
+                <span class="rating">4.5 Rating</span>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="card" data-category="burger">
+                <img src="./images/Chessy Burger.png" alt="">
+                <h2>Chessy Burger</h2>
+                <p>Loaded with lot of cheese ,
+                    crispy bacon and our signature sauce </p>
+                <span class="price">₹179</span>
+                <span class="rating">4.3 Rating</span>
+                <button class="cta">Add to Cart</button>
+            </div>
+            <div class="card" data-category="burger">
+                <img src="./images/Veg Delight.png" alt="">
+                <h2>Veg Burger</h2>
+                <p>Healthy veggie patty
+                    with lettuce and mayo </p>
+                <span class="price">₹129</span>
+                <span class="rating">4.8 Rating</span>
+                <button class="cta">Add to Cart</button>
+
+            </div>
+            <p id="no-items" style="display:none; text-align:center; color:#bbb;">
+                No items available in this category
+            </p>
+        </div>
+        <script src="script.js"></script>
+        <script src="cart.js"></script>
+</body>
+
+</html>

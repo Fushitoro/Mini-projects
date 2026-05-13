@@ -1,22 +1,11 @@
-// let cartCount = 0;
-// const cartDisplay = document.getElementById("cart-count");
+const cartCount = document.getElementById("cart-count");
+const addButtons = document.querySelectorAll(".card .cta");
 
-// // ADD BUTTONS
-// const addButtons = document.querySelectorAll(".add-btn");
+let count = 0;
 
-// addButtons.forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     cartCount++;
-//     updateCart();
-
-//     btn.innerText = "✓";
-//     setTimeout(() => {
-//       btn.innerText = "+";
-//     }, 800);
-//   });
-// });
-
-// // UPDATE CART
-// function updateCart() {
-//   cartDisplay.innerText = cartCount;
-// }
+addButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        count++;
+        cartCount.textContent = count;
+    });
+});
